@@ -114,9 +114,49 @@ td {
 }
 
 .container {
-  --containerWidth: 1280px;
+  --containerWidth: 1124px;
   --containerOffset: 36px;
   max-width: calc(var(--containerWidth) + (var(--containerOffset) * 2));
   padding: 0 var(--containerOffset);
   margin: 0 auto;
+}
+
+.yellow {
+  color: var(--yellow-color);
+}
+
+.green {
+  color: var(--green-color);
+}
+
+.orange {
+  color: var(--orange-color);
+}
+
+.red {
+  color: var(--red-color);
+}
+
+@include laptop {
+  .container {
+    --containerOffset: 25px;
+  }
+}
+
+@include tablet {
+  .container {
+    --containerOffset: 30px;
+  }
+}
+
+@include small-tablet {
+  .container {
+    --containerOffset: 10px;
+  }
+}
+
+@include mobile {
+  .container {
+    --containerOffset: 5px;
+  }
 }

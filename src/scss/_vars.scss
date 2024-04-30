@@ -4,6 +4,28 @@
   --Bold: "Montserrat-Bold", sans-serif;
 
   // Main colors
-  --main-bg: #d9d9d9;
+  --main-bg: #efefef;
   --main-color: #000;
+  --main-border: #6e6e6e;
+
+  // Hovers
+  --input-hov-bg: #dfdfdf;
+  --input-foc-bg: rgba(180, 198, 203, 0.3);
+  --input-foc-bor: rgb(86 164 164);
+  --btn-hov-bg: rgb(86 164 164);
+  --btn-hov-bc: rgb(0 0 0);
+
+  // Elements
+  --inp-span-col: rgb(169, 169, 169);
+  --btn-bg: rgb(216 239 239);
+  --btn-bc: rgb(128 128 128);
+
+  // Result color
+  --result-bg: rgb(216 239 239);
+
+  // Item colors
+  --yellow-color: rgb(213, 213, 15);
+  --green-color: green;
+  --orange-color: orange;
+  --red-color: red;
 }
