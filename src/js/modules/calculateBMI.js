@@ -1,10 +1,12 @@
 import {
+  entryCalculation,
   entryCalculationNumber,
   entryCalculationResult,
   entryHeightInput,
   entryWeightInput,
   resultArr,
 } from "../main";
+import { scrollToResult } from "./scrollToResult";
 
 export const calculateBMI = () => {
   const arr = resultArr;
@@ -33,6 +35,8 @@ export const calculateBMI = () => {
     : result > 40
     ? (entryCalculationResult.textContent = arr[5].text)
     : "";
+
+  scrollToResult(entryCalculation);
 
   entryWeightInput.value = "";
   entryHeightInput.value = "";
