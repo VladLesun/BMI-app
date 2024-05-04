@@ -15,6 +15,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -302,6 +303,13 @@ td {
 .entry__span_unit {
   right: 25px;
 }
+.entry__valid-box {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  color: #f00;
+  font-size: 12px;
+}
 .entry__btn {
   width: 120px;
   height: 60px;
@@ -402,6 +410,10 @@ td {
   .entry__label {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+  .entry__valid-box {
+    top: 40px;
+    left: 25px;
   }
   .entry__calculation {
     margin: 20px 0 10px;
