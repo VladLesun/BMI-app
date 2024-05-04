@@ -75,6 +75,7 @@ export const entrySection = getSection("entry"),
   ),
   entryInpSpanWeight = getSpanInput("entry__span", "entry__span_text", "Вес"),
   entryInpSpanKg = getSpanInput("entry__span", "entry__span_unit", "кг"),
+  entryWeightInpValidate = getBox("entry__valid-box"),
   entryHeightLabel = getLabel("height", "entry__label"),
   entryHeightInput = getInput(
     "entry__input",
@@ -85,6 +86,7 @@ export const entrySection = getSection("entry"),
   ),
   entryInpSpanHeight = getSpanInput("entry__span", "entry__span_text", "Рост"),
   entryInpSpanSm = getSpanInput("entry__span", "entry__span_unit", "см"),
+  entryHeightInpValidate = getBox("entry__valid-box"),
   entryAddBtn = getButton("entry__btn", "Рассчитать"),
   entryCalculation = getBox("entry__calculation"),
   entryCalculationTitle = getTitle("h3", "entry-calculation__title", "Ваш ИМТ"),
@@ -117,8 +119,18 @@ entryCalculation.append(
   entryCalculationNumber,
   entryCalculationResult
 );
-entryWeightLabel.append(entryWeightInput, entryInpSpanWeight, entryInpSpanKg);
-entryHeightLabel.append(entryHeightInput, entryInpSpanHeight, entryInpSpanSm);
+entryWeightLabel.append(
+  entryWeightInput,
+  entryInpSpanWeight,
+  entryInpSpanKg,
+  entryWeightInpValidate
+);
+entryHeightLabel.append(
+  entryHeightInput,
+  entryInpSpanHeight,
+  entryInpSpanSm,
+  entryHeightInpValidate
+);
 entryFieldset.append(
   entryLegend,
   entryWeightLabel,

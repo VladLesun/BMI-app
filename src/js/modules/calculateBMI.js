@@ -7,6 +7,7 @@ import {
   resultArr,
 } from "../main";
 import { scrollToResult } from "./scrollToResult";
+import { validation } from "./validation";
 
 export const calculateBMI = () => {
   const arr = resultArr;
@@ -14,7 +15,9 @@ export const calculateBMI = () => {
   const weightValue = Number(entryWeightInput.value),
     heightValue = Number(entryHeightInput.value);
 
-  if (weightValue === 0 || heightValue === 0) {
+  const isValid = validation();
+
+  if (isValid === true) {
     return;
   }
 

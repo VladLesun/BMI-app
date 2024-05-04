@@ -63,6 +63,14 @@
     }
   }
 
+  &__valid-box {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: #f00;
+    font-size: 12px;
+  }
+
   &__btn {
     width: 120px;
     height: 60px;
@@ -140,6 +148,10 @@
     &__label {
       margin-right: 0;
       margin-bottom: 10px;
+    }
+    &__valid-box {
+      top: 40px;
+      left: 25px;
     }
     &__calculation {
       margin: 20px 0 10px;
